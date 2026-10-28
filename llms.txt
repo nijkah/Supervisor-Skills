@@ -9,13 +9,13 @@ Target audience: researchers writing papers for NeurIPS, ICML, ICLR, VLDB, SIGMO
 Paste the following prompt into your AI assistant:
 
 ```
-Help me install every skill under the skills/ directory from https://github.com/nijkah/Supervisor-Skills/tree/english-only. Treat each directory containing SKILL.md as a separate skill; do not install the repository root as one skill. If you are Codex, use $skill-installer.
+Help me install every skill under the skills/ directory from https://github.com/nijkah/Supervisor-Skills/tree/main. Treat each directory containing SKILL.md as a separate skill; do not install the repository root as one skill. If you are Codex, use $skill-installer.
 ```
 
 To install only Draw.io reconstruction:
 
 ```
-Use $skill-installer to install https://github.com/nijkah/Supervisor-Skills/tree/english-only/skills/drawio-reconstruction.
+Use $skill-installer to install https://github.com/nijkah/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
 ```
 
 See [README.md](README.md) for full details.

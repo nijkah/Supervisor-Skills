@@ -16,6 +16,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   preserving explicit user language requests.
 - Updated internal links and contribution guidance for the English-only layout.
 - Replaced Chinese introduction flowcharts with editable English diagrams.
+- Promoted the English edition to `main`, preserved the former `main` as
+  `upstream-sync`, and documented the upstream integration workflow.
 
 ### Removed
 

@@ -50,6 +50,43 @@ Keep internal links aligned with the English filenames. Shared images live under
 `assets/` and chapter-local images under `handbook/<chapter>/assets/`. Review
 embedded text in images, PDFs, and Draw.io files as well as plain text.
 
+## Branches and upstream updates
+
+- `main` contains the English-only edition and is this fork's default branch.
+- `upstream-sync` preserves the former `main` and receives the original project's
+  updates without English-only changes.
+- `origin` points to `nijkah/Supervisor-Skills`; `upstream` points to
+  `HKUSTDial/Supervisor-Skills`.
+
+In a new clone, register the original repository once:
+
+```bash
+git remote add upstream https://github.com/HKUSTDial/Supervisor-Skills.git
+```
+
+With a clean working tree, update the source branch first:
+
+```bash
+git fetch upstream
+git switch upstream-sync
+git merge --ff-only upstream/main
+git push origin upstream-sync
+```
+
+Then bring the changes into the English edition for review:
+
+```bash
+git switch main
+git merge --no-ff --no-commit upstream-sync
+```
+
+Resolve conflicts using the English filenames and documentation layout. Translate
+new material and remove duplicate Chinese content, including embedded figure
+text. Run the lint and shared-reference checks above, review the staged changes,
+then commit and push `main`. If Git reports that the branch is already up to date,
+there is no merge to commit. Merge commits preserve the upstream ancestry for
+subsequent updates.
+
 ## License
 
 All contributions are licensed under CC BY-NC-SA 4.0. By submitting a PR you agree to license your contribution under these terms and to provide attribution consistent with the original repository's convention.

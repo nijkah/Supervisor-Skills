@@ -151,7 +151,7 @@ This is the core of the repository. The theoretical experience above is distille
 Paste the following prompt into your AI assistant (Claude Code, Cursor, Codex, and similar) to complete the installation:
 
 ```
-Help me install every skill under skills/ from https://github.com/nijkah/Supervisor-Skills/tree/english-only. Treat each directory containing SKILL.md as a separate skill.
+Help me install every skill under skills/ from https://github.com/nijkah/Supervisor-Skills/tree/main. Treat each directory containing SKILL.md as a separate skill.
 ```
 
 ## Related open-source projects

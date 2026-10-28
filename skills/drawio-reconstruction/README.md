@@ -74,7 +74,7 @@ examples/data_man.drawio
 Install the directory that contains this `SKILL.md`, not the Supervisor-Skills repository root. With Codex, the most direct prompt is:
 
 ```text
-Use $skill-installer to install https://github.com/nijkah/Supervisor-Skills/tree/english-only/skills/drawio-reconstruction.
+Use $skill-installer to install https://github.com/nijkah/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
 ```
 
 For a manual user-level installation, copy or symlink this skill directory into a Codex skill discovery location:
