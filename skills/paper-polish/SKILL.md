@@ -261,7 +261,5 @@ Pointing out the problem honestly helps the author more than polishing it away.
 
 ## Output language
 
-Follow an explicit language request first. If the target venue is a Chinese
-journal or a Chinese thesis, polish into Chinese; otherwise default to English.
-Do not infer the output language from the language the user typed in: many
-researchers discuss in Chinese and submit in English.
+Default to English unless the user explicitly requests another language.
+Do not infer the output language from the language of the user's message.

@@ -4,6 +4,24 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- Made the existing English README, skills guide, and handbook the canonical
+  documentation at `README.md`, `skills/README.md`, and `handbook/`.
+- Translated the rebuttal guidance references and remaining Chinese-only text;
+  removed duplicate Chinese examples and language selectors.
+- Set drafting, polishing, and research output to English by default while
+  preserving explicit user language requests.
+- Updated internal links and contribution guidance for the English-only layout.
+- Replaced Chinese introduction flowcharts with editable English diagrams.
+
+### Removed
+
+- Chinese documentation editions, companion PDF, Chinese-language raster
+  assets, and the Chinese Draw.io example. English examples remain available.
+
 ## [2.1.0] - 2026-07-10
 
 ### Added
@@ -90,10 +108,8 @@ which had drifted since v2.0.0 (new passages, new figures, renamed PDF).
   `../../assets/images/` to preserve the Supervisor `assets/` layout;
   chapter-local refs (`./assets/5.1_vibe_research/...`,
   `./assets/5.2_meeting_notes/...`) remain as upstream.
-- Companion PDF renamed
-  `handbook/01_Preliminary/博士生科研入门辅导_2023年8月.pdf` ->
-  `博士生科研入门辅导.pdf` to match upstream. All references in
-  `README.md` and `README.en.md` updated.
+- Companion research-orientation PDF renamed to remove its August 2023
+  date suffix and match upstream. References in both root READMEs updated.
 - `assets/images/intro_flowchart_board.png` updated to the current
   upstream revision.
 
@@ -157,7 +173,7 @@ shipped in v1.0.0 are removed.
 
 ## [1.0.0] - 2026-04-19
 
-Initial public release of `Supervisor-Skills · 博导科研技能包`.
+Initial public release of `Supervisor-Skills` (PhD-advisor research skill collection).
 
 ### Included
 

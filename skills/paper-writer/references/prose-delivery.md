@@ -31,7 +31,7 @@ receives and what must never appear in it.
   following", "Based on the thinking template I built", "Following the CER
   framework").
 - Process preambles, in any language: "Let me first analyze...", "Here I will
-  structure...", "首先让我分析一下...", "根据蓝图...". Start directly with
+  structure...", "Based on the blueprint...". Start directly with
   the prose.
 - Bracketed placeholder tags of any kind: "citation needed", "to be
   verified", "to be specified by authors", "to be confirmed", "user

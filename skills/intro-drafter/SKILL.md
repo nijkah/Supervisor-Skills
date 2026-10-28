@@ -206,6 +206,5 @@ through that skill's references when finer wording support is needed.
 
 ## Output language
 
-Follow an explicit language request first; a named Chinese journal or
-Chinese thesis means Chinese prose; otherwise default to English. Never
-infer the output language from the language of the user's message.
+Default to English unless the user explicitly requests another language.
+Do not infer the output language from the language of the user's message.

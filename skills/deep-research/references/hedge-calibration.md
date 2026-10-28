@@ -10,25 +10,21 @@ drains the survey of judgment.
 
 ### Strong (multiple independent studies agree; meta-analysis; large-scale validation)
 
-- English: demonstrate, establish, show, confirm; consistently, robustly
-- Chinese: 表明、证实、确立；一致地、稳健地
+- demonstrate, establish, show, confirm; consistently, robustly
 
 ### Medium (two or three studies; bounded conditions)
 
-- English: suggest, indicate, support the view that, be consistent with,
+- suggest, indicate, support the view that, be consistent with,
   point to
-- Chinese: 提示、说明、支持……的看法、与……一致、指向
 
 ### Weak (one or two studies, or mechanism-only argument)
 
-- English: may, might, could, appears to, seems likely
-- Chinese: 可能、或许、似乎、看来
+- may, might, could, appears to, seems likely
 
 ### No evidence
 
-- English: to our knowledge, no study has examined; it remains an open
+- to our knowledge, no study has examined; it remains an open
   question
-- Chinese: 据检索结果，尚无研究考察过；仍是一个开放问题
 
 ## Common failures
 

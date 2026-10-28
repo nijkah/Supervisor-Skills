@@ -262,11 +262,8 @@ references/citation-style.md.
 
 ## Output language
 
-Follow an explicit language request first. If the target is a Chinese
-journal or a Chinese thesis, write Chinese academic prose; otherwise default
-to English. Never infer the output language from the language the user typed
-in: describing ideas in Chinese and submitting in English is the normal
-case.
+Default to English unless the user explicitly requests another language.
+Do not infer the output language from the language of the user's message.
 
 ## Boundaries with sibling skills
 

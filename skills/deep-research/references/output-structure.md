@@ -165,8 +165,7 @@ unverified entries.
 4. No boilerplate openings ("With the rapid development of AI..."); open
    with a concrete fact.
 5. Citations as bracketed numbers.
-6. Mixed-language text keeps technical terms in English with a half-width
-   space between English and Chinese.
+6. Use consistent English terminology and standard spacing.
 7. Evidence strength is carried by wording (the hedge ladder), never by
    explicit labels.
 

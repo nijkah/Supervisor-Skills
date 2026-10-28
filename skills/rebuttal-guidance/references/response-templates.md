@@ -1,92 +1,92 @@
-# 回应模板
+# Response Templates
 
-三种基础模板，对应不同 concern 类型。**此 Skill 输出的是指导计划，不是最终 rebuttal 文本。**
+Three basic templates for different concern types. **This skill produces a guidance plan, not final rebuttal prose.**
 
 ---
 
-## 全局结构建议
+## Suggested overall structure
 
 ```
-[可选：2-3 句开场: 感谢 + 修改摘要]
+[Optional: 2-3 opening sentences with thanks + a summary of revisions]
 
-**R1.W1** [标题]
+**R1.W1** [Title]
 ...
 
-**R1.W2** [标题]
+**R1.W2** [Title]
 ...
 
-**R1.Q1** [标题]
+**R1.Q1** [Title]
 ...
 ```
 
 ---
 
-## 模板 A: 澄清误解（misunderstanding / writing_clarity）
+## Template A: Clarify a misunderstanding (misunderstanding / writing_clarity)
 
 ```
-**R?.W?** [用一句话复述审稿人的关注点]
+**R?.W?** [Restate the reviewer's concern in one sentence]
 
-感谢审稿人的评论。该评论可能源于 [具体误读点]。
+Thank you for the comment. This concern may stem from [specific point of misinterpretation].
 
-**澄清。** [2–4 句说明，指向 Sec. X / Table Y / Appendix Z。]
+**Clarification.** [2–4 sentences with a pointer to Sec. X / Table Y / Appendix Z.]
 
-**证据。** [来自论文的一个具体事实或数字。]
+**Evidence.** [One specific fact or number from the manuscript.]
 
-[若有修改] 已在 Sec. X 补充说明（修改版以蓝色标注）。
+[If revised] We have added clarification in Sec. X (marked in blue in the revision).
 ```
 
-**适用心态**：高 constructiveness 的审稿人对清晰澄清反应好。
-**避免**：超过 4 句的冗长解释；没有指向论文具体位置。
+**Applicable mindset**: reviewers with high constructiveness respond well to clear clarification.
+**Avoid**: explanations longer than four sentences; no pointer to a specific manuscript location.
 
 ---
 
-## 模板 B: 补充证据（evidence_gap / baseline_fairness / efficiency）
+## Template B: Add evidence (evidence_gap / baseline_fairness / efficiency)
 
 ```
-**R?.W?** [复述关注点]
+**R?.W?** [Restate the concern]
 
-我们认同 [具体缺失] 会进一步强化论文。
+We agree that addressing [specific gap] would further strengthen the paper.
 
-**新结果。** 我们新增了 [实验/分析]：
-- [指标] 在 [数据集] 上：我们方法 X vs 基线 Y
-- 详见 Table N / Appendix M
+**New results.** We have added [experiment/analysis]:
+- [Metric] on [dataset]: our method X vs. baseline Y
+- See Table N / Appendix M
 
-**结论。** [一句话说明这如何回应了该关注点。]
+**Conclusion.** [One sentence explaining how this addresses the concern.]
 ```
 
-**适用心态**：实验导向型、强硬多质疑型对新实验反应最正面（Cohen's d 显著）。
-**避免**：提出无法在 rebuttal 期间完成的实验承诺；数字不来自实际结果。
+**Applicable mindset**: Experiment-Oriented reviewers and Harsh reviewers with Multiple Concerns respond most positively to new experiments (substantial Cohen's d effects).
+**Avoid**: promises of experiments that cannot be completed during rebuttal; numbers that do not come from actual results.
 
 ---
 
-## 模板 C: 承认局限，收窄范围（scope_claim / novelty / theory）
+## Template C: Acknowledge limitations and narrow scope (scope_claim / novelty / theory)
 
 ```
-**R?.W?** [复述关注点]
+**R?.W?** [Restate the concern]
 
-我们承认 [具体局限]。本文的贡献限定在 [缩窄后的范围]。
+We acknowledge [specific limitation]. This paper's contribution is bounded to [narrowed scope].
 
-**贡献仍然成立。** [在缩窄范围下，1–2 句说明贡献的有效性。]
+**The contribution still holds.** [1–2 sentences explaining its validity within the narrowed scope.]
 
-**改进措施。** [已做或将做的修改/补充分析。]
+**Improvements.** [Revisions/additional analyses completed or planned.]
 ```
 
-**适用心态**：高怀疑严厉型在面对 scope_claim 时，收窄 claim 比辩解更有效。
-**避免**：让步后没有给出"在有限范围内仍然有价值"的论据。
+**Applicable mindset**: for Highly Skeptical and Severe reviewers raising scope_claim concerns, narrowing the claim is more effective than arguing.
+**Avoid**: conceding without explaining why the contribution remains valuable within the bounded scope.
 
 ---
 
-## 本 Skill 输出的指导块格式
+## Guidance block produced by this skill
 
-Agent 输出的不是最终文本，而是每条关注点的指导计划：
+The agent produces a per-concern guidance plan, not final prose:
 
 ```
-### R1.W2: [关注点短标题]
+### R1.W2: [Short concern title]
 - **Concern type**: evidence_gap
-- **推荐模板**: B
-- **承认点**: 同意 ImageNet 评估会加强论文
-- **回应角度**: 补充高分辨率结果（不捏造数字）
-- **可引用证据**: 论文 Table 2 CIFAR 结果；新 Table（待补充）
-- **语气建议**: 中性、自信；避免防御性表述
-- **规避**: 过长的澄清段落而无新数字
+- **Recommended template**: B
+- **Acknowledgment**: Agree that ImageNet evaluation would strengthen the paper
+- **Response angle**: Add high-resolution results (do not fabricate numbers)
+- **Citable evidence**: CIFAR results in manuscript Table 2; new table (to be added)
+- **Tone guidance**: Neutral and confident; avoid defensive wording
+- **Avoid**: Long clarification paragraphs with no new numbers
 ```

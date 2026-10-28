@@ -57,12 +57,10 @@ Do not auto-generate high-risk claims such as "first", "only", "best". When the
 author's own draft contains them, do not silently keep them either: soften, or flag
 for the author to confirm the evidence.
 
-**English**: extraordinary, exceptional, remarkable, unprecedented, revolutionary,
+extraordinary, exceptional, remarkable, unprecedented, revolutionary,
 groundbreaking, new paradigm, best, superior, state-of-the-art, proves,
 conclusively, perfectly, first (without evidence), innovative, pioneering,
 transformative, surpass, excel, breakthrough.
-
-**Chinese**: 卓越、首次、唯一、最高、完美、碾压、遥遥领先、颠覆性、最优。
 
 Safer replacement directions:
 

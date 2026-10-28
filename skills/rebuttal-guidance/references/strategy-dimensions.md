@@ -1,45 +1,45 @@
-# Rebuttal 策略维度（Y 向量）
+# Rebuttal Strategy Dimensions (Y Vector)
 
-基于历史成功/失败 rebuttal 数据提炼的 10 个策略维度，1–5 分制。
-**overpromise_risk** 和 **vague_future_work** 为风险项（分越高越危险）。
+Ten strategy dimensions distilled from historical successful/unsuccessful rebuttals, scored on a 1–5 scale.
+**overpromise_risk** and **vague_future_work** are risk dimensions (higher scores mean greater risk).
 
-## 十个维度一览
+## The ten dimensions
 
-| 维度 | 含义 | 写作要点 |
-|------|------|---------|
-| **direct_address** | 直击该条 concern 核心，不绕弯 | 每条 W/Q 独立标题，不合并处理 |
-| **specific_evidence** | 使用数字、图表、对比结果 | 禁止"significantly improve"无数字支撑 |
-| **new_experiment_strength** | 新实验精准回应质疑点 | 说明新实验与主结论的关系 |
-| **clarification_quality** | 误解澄清清晰，指向论文原文 | 2–4 句 + Section/Table 指针 |
-| **controlled_concession** | 承认合理局限，不过度让步 | 承认后立即给出对应改进或缩窄范围 |
-| **structure_quality** | W/Q 结构清晰，便于审稿人对应 | 小标题、编号列表 |
-| **tone_confidence** | 语气自信、尊重，不防御 | 避免"you misunderstood"等防御表述 |
-| **paper_grounding** | claim 锚定正文/附录的具体位置 | 不提出正文未提及的新 claim |
-| **overpromise_risk** ↓ | 承诺可交付，不过度许诺 | 避免"fully solve"等不切实际表述 |
-| **vague_future_work** ↓ | 能回应就回应，少推给未来工作 | 推给 future work = 回避信号 |
+| Dimension | Meaning | Writing guidance |
+|-----------|---------|------------------|
+| **direct_address** | Address the core concern directly | Give each W/Q its own heading; do not merge them |
+| **specific_evidence** | Use numbers, figures, tables, and comparisons | Do not claim "significantly improve" without numbers |
+| **new_experiment_strength** | New experiments precisely address the concern | Explain how the new experiment relates to the main conclusion |
+| **clarification_quality** | Clear explanation of misunderstandings, grounded in the manuscript | 2–4 sentences + a Section/Table pointer |
+| **controlled_concession** | Acknowledge valid limitations without conceding too much | Follow acknowledgment immediately with the corresponding improvement or narrowed scope |
+| **structure_quality** | Clear W/Q structure that reviewers can follow | Subheadings and numbered lists |
+| **tone_confidence** | Confident, respectful, non-defensive tone | Avoid defensive wording such as "you misunderstood" |
+| **paper_grounding** | Anchor claims to specific locations in the paper/appendix | Do not introduce claims absent from the manuscript |
+| **overpromise_risk** ↓ | Make deliverable commitments without overpromising | Avoid unrealistic wording such as "fully solve" |
+| **vague_future_work** ↓ | Answer now when possible instead of deferring to future work | Deferral to future work signals evasion |
 
-## 心态条件下的维度优先级
+## Mindset-specific priorities
 
-匹配到心态后，从 `mindset-library.md` 对应簇读取：
+Once a mindset is matched, read its cluster in `mindset-library.md`:
 
-1. **rule_diff Top 3**: 成功组 vs 失败组差异最大的 3 个维度（正值 = 成功更高）。
-2. **Cohen's d 效应**: d > 0.8 表示该维度对该心态有显著区分力。
-3. **success_patterns / failure_patterns**: LLM 提炼的具体策略描述。
+1. **rule_diff Top 3**: the three dimensions with the largest differences between successful and unsuccessful groups (positive = higher in the successful group).
+2. **Cohen's d effects**: d > 0.8 indicates strong discrimination for that mindset.
+3. **success_patterns / failure_patterns**: concrete strategy descriptions distilled by an LLM.
 
-原则：正差异的维度加强，负差异的维度谨慎（失败组反而更高，可能是过度补救信号）。
+Principle: strengthen dimensions with positive differences; use caution with negative differences (higher values in the unsuccessful group may signal overcompensation).
 
-## 高效策略组合（交互项）
+## Effective strategy combinations (interactions)
 
-数据分析发现以下维度组合有协同效应，同时高分时成功率更高：
+The data analysis identified synergy in these combinations, with higher success rates when both dimensions score highly:
 
-- `direct_address` + `specific_evidence`: 直接回应 + 具体证据，核心组合
-- `specific_evidence` + `paper_grounding`: 数据有论文锚点，可信度最高
-- `new_experiment_strength` + `specific_evidence`: 新实验要配具体数字
-- `tone_confidence` + 低 `overpromise_risk`: 自信但不夸大
+- `direct_address` + `specific_evidence`: direct response + concrete evidence, the core combination.
+- `specific_evidence` + `paper_grounding`: evidence anchored to the manuscript provides the strongest credibility.
+- `new_experiment_strength` + `specific_evidence`: new experiments need concrete numbers.
+- `tone_confidence` + low `overpromise_risk`: confidence without exaggeration.
 
-## 每条 concern 的策略标注格式
+## Per-concern strategy annotation
 
 ```
-R1.W2 → 优先: specific_evidence, paper_grounding, clarification_quality
-         规避: high overpromise_risk, vague_future_work
+R1.W2 → Prioritize: specific_evidence, paper_grounding, clarification_quality
+         Avoid: high overpromise_risk, vague_future_work
 ```

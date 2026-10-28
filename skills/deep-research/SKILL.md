@@ -187,12 +187,8 @@ purpose; do not import this convention into paper drafting.
 
 ## Output language
 
-The report follows the language of the user's request: a question asked in
-Chinese gets a Chinese survey, English gets English. (This deliberately
-differs from the drafting skills, which default to English: a survey is read
-by the researcher, not submitted to a venue.) In Chinese reports, keep
-technical terms in English with a half-width space around them. An explicit
-language request always wins.
+Default to English unless the user explicitly requests another language.
+Do not infer the output language from the language of the user's message.
 
 ## Delivery
 

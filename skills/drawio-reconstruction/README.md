@@ -2,8 +2,6 @@
 
 # Draw.io Reconstruction Skill
 
-[English](README.md) | [中文](README.zh-CN.md)
-
 **A Codex skill for reconstructing diagram images into editable Draw.io files, with examples strongly recommended to be reproduced using Codex + GPT-5.5 xhigh.**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2605.15677-b31b1b)](https://arxiv.org/abs/2605.15677)
@@ -60,10 +58,6 @@ The examples below show one-round Codex + GPT-5.5 xhigh + skill reconstruction o
     <td><img src="assets/cases/data_man_original.png" alt="Data management original"></td>
     <td><img src="assets/cases/data_man_drawio.png" alt="Data management reconstructed Draw.io export"></td>
   </tr>
-  <tr>
-    <td><img src="assets/cases/data_sci2_original.png" alt="Scientific data original"></td>
-    <td><img src="assets/cases/data_sci2_drawio.png" alt="Scientific data reconstructed Draw.io export"></td>
-  </tr>
 </table>
 
 Example source images and editable outputs are available at:
@@ -73,8 +67,6 @@ examples/data_lake.png
 examples/data_lake.drawio
 examples/data_man.png
 examples/data_man.drawio
-examples/data_sci2.png
-examples/data_sci2.drawio
 ```
 
 ## Installation As A Codex Skill
@@ -82,7 +74,7 @@ examples/data_sci2.drawio
 Install the directory that contains this `SKILL.md`, not the Supervisor-Skills repository root. With Codex, the most direct prompt is:
 
 ```text
-Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
+Use $skill-installer to install https://github.com/nijkah/Supervisor-Skills/tree/english-only/skills/drawio-reconstruction.
 ```
 
 For a manual user-level installation, copy or symlink this skill directory into a Codex skill discovery location:
